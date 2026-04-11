@@ -10,6 +10,10 @@
 <body>
   <div class="container-fluid">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 RUST ( LET  -  LET MUT  -  CONST  -  STATIC  -  STATIC MUT ) </div>
+      <div id="verible" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <div class="header" style="background: #0007ff;">🦀 RUST INTEGER & FLOAT - TURLARI</div>
       <div id="integer" style="width: 100%;"></div>
     </div>
@@ -26,8 +30,20 @@
       <div id="bitwise" style="width: 100%;"></div>
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 RUST BOOLEAN </div>
+      <div id="bool" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <div class="header" style="background: #0007ff;">🦀 RUST STRING - MATNLAR</div>
       <div id="string" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 RUST CHAR</div>
+      <div id="char" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 RUST UNIT TYPE</div>
+      <div id="unit_type" style="width: 100%;"></div>
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <div class="header" style="background: #0007ff;">🦀 RUST ARRAY - LIST</div>
@@ -56,6 +72,10 @@
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <div class="header" style="background: #0007ff;">🦀 RUST TYPE ALIASES</div>
       <div id="type_aliases" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 RUST TYPE CASTING</div>
+      <div id="type_casting" style="width: 100%;"></div>
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <div class="header" style="background: #0007ff;">🦀 RUST FUNCTIONS - FUNKSIYALAR</div>
@@ -97,6 +117,12 @@
       <div class="header" style="background: #0007ff;">🦀 RUST RESULT< T, E></div>
       <div id="result" style="width: 100%;"></div>
     </div>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 RUST BUILT-IN MACROS</div>
+      <div id="build" style="width: 100%;"></div>
+    </div>
+
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <div class="header" style="background: #573c14;">🦀 RUST PATTERN MATCHING</div>
       <div id="pattern_matching" style="width: 100%;"></div>
@@ -178,19 +204,23 @@
           editor.onDidContentSizeChange(updateHeight);
         })
       }
-
+      createEditor('verible', 'rust/verible.rs');
       createEditor('integer', 'rust/integer_&_float.rs');
       createEditor('math', 'rust/math.rs');
       createEditor('comparison', 'rust/comparison.rs');
       createEditor('bitwise', 'rust/bitwise.rs');
+      createEditor('bool', 'rust/bool.rs');
       createEditor('string', 'rust/strings.rs');
+      createEditor('unit_type', 'rust/unit_type.rs');
       createEditor('array', 'rust/Array.rs');
       createEditor('vector', 'rust/vec.rs');
       createEditor('hashmap', 'rust/HashMap.rs');
       createEditor('hashset', 'rust/HashSet.rs');
+      createEditor('char', 'rust/char.rs');
       createEditor('tuple', 'rust/tuple.rs');
       createEditor('ranges', 'rust/ranges.rs');
       createEditor('type_aliases', 'rust/type_aliases.rs');
+      createEditor('type_casting', 'rust/type_casting.rs');
       createEditor('functions', 'rust/function.rs');
       createEditor('control', 'rust/control_if_match.rs');
       createEditor('loop', 'rust/loop.rs');
@@ -201,6 +231,10 @@
       createEditor('enum', 'rust/enum.rs');
       createEditor('option', 'rust/option.rs');
       createEditor('result', 'rust/result.rs');
+      createEditor('build', 'rust/build-in.rs');
+
+
+
       createEditor('pattern_matching', 'rust/pattern_matching.rs');
       createEditor('let_matches_todo', 'rust/let_matches_todo.rs');
       createEditor('struct', 'rust/struct_&_impl.rs');
