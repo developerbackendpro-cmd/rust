@@ -166,9 +166,6 @@
               alwaysConsumeMouseWheel: false
             }
           });
-          editor.onDidFocusEditorWidget(() => {
-              editor.blur();
-          });
           function updateHeight() {
             const contentHeight = editor.getContentHeight();
             container.style.height = contentHeight + "px";
