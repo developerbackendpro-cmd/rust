@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rust</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <style>body {background: #0f172a; color: white;}  .header { padding: 12px; font-weight: bold; font-size: 26px; text-align: center;}</style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 1.RUST ( LET  -  LET MUT  -  CONST  -  STATIC  -  STATIC MUT ) </div>
+      <div id="verible" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 2.RUST INTEGER & FLOAT - TURLARI</div>
+      <div id="integer" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 3.RUST ARITHMETIC OPERATORS - ARIFMETIKA</div>
+      <div id="math" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 4.RUST COMPARISON OPERATORS - TAQQOSLASH</div>
+      <div id="comparison" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 5.RUST BITWISE OPERATORS - VA - YOKI </div>
+      <div id="bitwise" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 6.RUST BOOLEAN </div>
+      <div id="bool" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 7.RUST STRING - MATNLAR</div>
+      <div id="string" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 8.RUST CHAR</div>
+      <div id="char" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 9.RUST UNIT TYPE</div>
+      <div id="unit_type" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 10.RUST ARRAY - LIST</div>
+      <div id="array" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 11.RUST VECTOR - LIST</div>
+      <div id="vector" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 12.RUST HASHMAP - DICTIONARY</div>
+      <div id="hashmap" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 13.RUST HASHSET - SET</div>
+      <div id="hashset" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 14.RUST TUPLE</div>
+      <div id="tuple" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 15.RUST RANGES</div>
+      <div id="ranges" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 16.RUST TYPE ALIASES</div>
+      <div id="type_aliases" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 17.RUST TYPE CASTING</div>
+      <div id="type_casting" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 18.RUST FUNCTIONS - FUNKSIYALAR</div>
+      <div id="functions" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 19.CONTROL FLOW: IF / MATCH - SHART OPERATORLARI</div>
+      <div id="control" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 20.RUST LOOP CONSTRUCTS - SIKILLAR</div>
+      <div id="loop" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 21.RUST SHADOWING - SOYA</div>
+      <div id="shadowing" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 22.RUST OWNERSHIP - EGALIK</div>
+      <div id="ownership" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 23.RUST BORROWING & REFERENCES - VAQTINCHA OLISH</div>
+      <div id="borrowing" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 24.RUST SLICES</div>
+      <div id="slice" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 25.RUST ENUM</div>
+      <div id="enum" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 26.RUST OPTION< T ></div>
+      <div id="option" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 27.RUST RESULT< T, E></div>
+      <div id="result" style="width: 100%;"></div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #0007ff;">🦀 28.RUST BUILT-IN MACROS</div>
+      <div id="build" style="width: 100%;"></div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 29.RUST PATTERN MATCHING</div>
+      <div id="pattern_matching" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 30.RUST LET ELSE MATCHES TODO</div>
+      <div id="let_matches_todo" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 31.RUST STRUCT + IMPL</div>
+      <div id="struct" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 32.RUST METHODS</div>
+      <div id="method" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 33.RUST DEBUG - DISPLAY </div>
+      <div id="debug_display" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 34.RUST STD::FMT  (CHUQUR) </div>
+      <div id="std_&_fmt" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 35.RUST - ( DEFAULT - PARTIALEQ - EQ - PARTIALORD - ORD )</div>
+      <div id="partialeq" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 36.RUST - ( SIZED - ?SIZED )</div>
+      <div id="sized" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 37.RUST - TRAIT  </div>
+      <div id="trait" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 38.RUST - ASSOCIATED TYPES </div>
+      <div id="associated_types" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 39.RUST - DYN TRAIT + OBJECT SAFETY</div>
+      <div id="dyn_trait" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 40.RUST - ( FROM - INTO )</div>
+      <div id="from" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 41.RUST - ( TRYFROM - TRYINTO )</div>
+      <div id="tryform_&_tryinto" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 42.RUST - ( ASREF - ASMUT )</div>
+      <div id="asrf_&_asmut" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 43.RUST - ( BORROW - BORROWMUT )</div>
+      <div id="borrowmut" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 44.RUST - ( TOOWNED )</div>
+      <div id="toowned" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 45.RUST - ( COW<'A, T> )</div>
+      <div id="cow" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 46.RUST - ( INDEX - INDEXMUT )</div>
+      <div id="index_&_indexmut" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 47.RUST - ( STD::ERROR::ERROR )</div>
+      <div id="std_&_error" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 48.RUST - ( Generics )</div>
+      <div id="generics" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 49.RUST - ( LIFETIMES )</div>
+      <div id="lifetimes" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 50.RUST - ( STATIC LIFETIME )</div>
+      <div id="static_lifetime" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 51.RUST - ( VARIANCE CO/CONTRA/INVARIANCE )</div>
+      <div id="variance" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 52.RUST - ( HRTB — FOR<'A> (HIGHER-RANKED TRAIT BOUNDS) )</div>
+      <div id="hrtb" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 53.RUST - CLOSURES</div>
+      <div id="closures" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 54.RUST - FN() POINTERS</div>
+      <div id="fn" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 55.RUST - ITERATORS</div>
+      <div id="iterators" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 56.RUST - ITERATOR IMPL</div>
+      <div id="iterator_imp" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 57.RUST - INTOITERATOR - FROMITERATOR</div>
+      <div id="into_iterator" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 58.RUST - EXACTSIZEITERATOR - DOUBLEENDEDITERATOR - FUSEDITERATOR</div>
+      <div id="exact_size_iterator" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 59.RUST - EXTEND</div>
+      <div id="extend" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 60.RUST - PRODUCT - SUM </div>
+      <div id="product_sum" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 61.RUST - NEVER TYPE </div>
+      <div id="never_type" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 62.RUST - TURBOFISH  ::<> </div>
+      <div id="turbo_fish" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 63.RUST - ERROR HANDLING — ANYHOW - THISERROR </div>
+      <div id="error_handling" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 64.RUST - ? OPERATORI </div>
+      <div id="operator" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 65.RUST - MAP  |  AND_THEN  |  OK_OR </div>
+      <div id="map" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 66.RUST - COPY - CLONE </div>
+      <div id="copy" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 67.RUST - DEREF - DEREFMUT</div>
+      <div id="deref" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 68.RUST DROP</div>
+      <div id="drop" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 69.RUST OPERATOR OVERLOADING</div>
+      <div id="operator_overloading" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 70.RUST FORMAT - CHUQUR</div>
+      <div id="format" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 71.RUST STD::HASH</div>
+      <div id="hash" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 72.RUST STD::NUM</div>
+      <div id="std_num" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 73.RUST COLLECTIONS - BTREEMAP - VECDEQUE - BINARYHEAP</div>
+      <div id="collection" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 74.RUST BOX< T ></div>
+      <div id="box_t" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 75.RUST RC - ARC - WEAK</div>
+      <div id="rc" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 76.RUST REFCELL - CELL</div>
+      <div id="refcell" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 77.RUST MANUALLYDROP</div>
+      <div id="manualldrop" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 78.RUST IMPL TRAIT</div>
+      <div id="imp_trait" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #573c14;">🦀 79.RUST STD::CMP</div>
+      <div id="cmp" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 80.RUST STD::PANIC</div>
+      <div id="panic" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 81.RUST ONCECELL - ONCELOCK - LAZYLOCK</div>
+      <div id="oncecell" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 82.RUST MODULES + USE + PUB</div>
+      <div id="modules" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 83.RUST CRATES + CARGO.TOML</div>
+      <div id="creates" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 84.RUST ATTRIBUTES</div>
+      <div id="attributes" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 85.RUST WORKSPACES</div>
+      <div id="work-space" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 86.RUST CARGO FEATURES</div>
+      <div id="cargo" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 87.RUST TRAITS CHUQUR</div>
+      <div id="strong_trait" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 88.RUST ADV GENERICS</div>
+      <div id="adv" style="width: 100%;"></div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="header" style="background: #720122;">🦀 89.RUST CONST FN - CONST GENERICS</div>
+      <div id="const_generics" style="width: 100%;"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.44.0/min/vs/loader.js"></script>
+  <script>
+    require.config({paths: {vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.44.0/min/vs'}});
+    require(['vs/editor/editor.main'], function () {
+      monaco.editor.defineTheme('github-dark', {
+        base: 'vs-dark',
+        inherit: true,
+        rules: [
+          { token: 'comment', foreground: '28ff00' },
+          { token: 'keyword', foreground: 'ff7b72' },
+          { token: 'string', foreground: 'fff700' },
+          { token: 'number', foreground: 'ff0000' },
+          { token: 'type', foreground: 'ffa657' },
+          { token: 'function', foreground: 'ff7b72' }
+        ],
+        colors: {
+          'editor.lineHighlightBackground': '#00000000',
+          'editor.lineHighlightBorder': '#00000000',
+          'editorLineNumber.activeForeground': '#63ecfd',
+          'editor.background': '#000000'
+        }
+      });
+      function createEditor(containerId, filePath) {
+        fetch(filePath).then(response => {
+          if (!response.ok) {
+            throw new Error("File topilmadi");
+          }
+          return response.text();
+        }).then(code => {
+          const container = document.getElementById(containerId);
+          container.addEventListener('mousedown', function(e) {
+              if (e.button === 2) e.preventDefault();
+          });
+          const editor = monaco.editor.create(container, {
+            value: code,
+            language: 'rust',
+            theme: 'github-dark',
+            readOnly: true,
+            domReadOnly: true,
+            overviewRulerLanes: 0,
+            hideCursorInOverviewRuler: true,
+            quickSuggestions: false,
+            wordBasedSuggestions: false,
+            minimap: {enabled: false},
+            scrollBeyondLastLine: false,
+            automaticLayout: false,
+            contextmenu: false,
+            scrollbar: {
+              vertical: 'hidden',
+              horizontal: 'hidden',
+              handleMouseWheel: false,
+              alwaysConsumeMouseWheel: false
+            }
+          });
+          function updateHeight() {
+            const contentHeight = editor.getContentHeight();
+            container.style.height = contentHeight + "px";
+            editor.layout();
+          }
+          updateHeight();
+          editor.onDidContentSizeChange(updateHeight);
+        })
+      }
+      createEditor('verible', 'rust/verible.rs');
+      createEditor('integer', 'rust/integer_&_float.rs');
+      createEditor('math', 'rust/math.rs');
+      createEditor('comparison', 'rust/comparison.rs');
+      createEditor('bitwise', 'rust/bitwise.rs');
+      createEditor('bool', 'rust/bool.rs');
+      createEditor('string', 'rust/strings.rs');
+      createEditor('unit_type', 'rust/unit_type.rs');
+      createEditor('array', 'rust/Array.rs');
+      createEditor('vector', 'rust/vec.rs');
+      createEditor('hashmap', 'rust/HashMap.rs');
+      createEditor('hashset', 'rust/HashSet.rs');
+      createEditor('char', 'rust/char.rs');
+      createEditor('tuple', 'rust/tuple.rs');
+      createEditor('ranges', 'rust/ranges.rs');
+      createEditor('type_aliases', 'rust/type_aliases.rs');
+      createEditor('type_casting', 'rust/type_casting.rs');
+      createEditor('functions', 'rust/function.rs');
+      createEditor('control', 'rust/control_if_match.rs');
+      createEditor('loop', 'rust/loop.rs');
+      createEditor('shadowing', 'rust/shadowing.rs');
+      createEditor('ownership', 'rust/ownership.rs');
+      createEditor('borrowing', 'rust/borrowing_&_referance.rs');
+      createEditor('slice', 'rust/slice.rs');
+      createEditor('enum', 'rust/enum.rs');
+      createEditor('option', 'rust/option.rs');
+      createEditor('result', 'rust/result.rs');
+      createEditor('build', 'rust/build-in.rs');
+      createEditor('pattern_matching', 'rust/pattern_matching.rs');
+      createEditor('let_matches_todo', 'rust/let_matches_todo.rs');
+      createEditor('struct', 'rust/struct_&_impl.rs');
+      createEditor('method', 'rust/method.rs');
+      createEditor('debug_display', 'rust/debug_display.rs');
+      createEditor('std_&_fmt', 'rust/std_&_fmt.rs');
+      createEditor('partialeq', 'rust/partialeq.rs');
+      createEditor('sized', 'rust/sized.rs');
+      createEditor('trait', 'rust/trait.rs');
+      createEditor('associated_types', 'rust/associated_types.rs');
+      createEditor('dyn_trait', 'rust/dyn_trait.rs');
+      createEditor('from', 'rust/from.rs');
+      createEditor('tryform_&_tryinto', 'rust/tryform_&_tryinto.rs');
+      createEditor('asrf_&_asmut', 'rust/asrf_&_asmut.rs');
+      createEditor('borrowmut', 'rust/borrowmut.rs');
+      createEditor('toowned', 'rust/toowned.rs');
+      createEditor('cow', 'rust/cow.rs');
+      createEditor('index_&_indexmut', 'rust/index_&_indexmut.rs');
+      createEditor('std_&_error', 'rust/std_&_error.rs');
+      createEditor('generics', 'rust/generics.rs');
+      createEditor('lifetimes', 'rust/lifetimes.rs');
+      createEditor('static_lifetime', 'rust/static_lifetime.rs');
+      createEditor('variance', 'rust/variance.rs');
+      createEditor('hrtb', 'rust/hrtb.rs');
+      createEditor('closures', 'rust/closures.rs');
+      createEditor('fn', 'rust/fn.rs');
+      createEditor('iterators', 'rust/iterators.rs');
+      createEditor('iterator_imp', 'rust/iterator_imp.rs');
+      createEditor('into_iterator', 'rust/intoitertor.rs');
+      createEditor('exact_size_iterator', 'rust/exact_size_iterator.rs');
+      createEditor('extend', 'rust/extend.rs');
+      createEditor('product_sum', 'rust/product_sum.rs');
+      createEditor('never_type', 'rust/never_type.rs');
+      createEditor('turbo_fish', 'rust/turbo_fish.rs');
+      createEditor('error_handling', 'rust/error_handling.rs');
+      createEditor('operator', 'rust/operator.rs');
+      createEditor('map', 'rust/map.rs');
+      createEditor('copy', 'rust/copy.rs');
+      createEditor('deref', 'rust/deref.rs');
+      createEditor('drop', 'rust/drop.rs');
+      createEditor('operator_overloading', 'rust/operator_overloading.rs');
+      createEditor('format', 'rust/format.rs');
+      createEditor('hash', 'rust/hash.rs');
+      createEditor('std_num', 'rust/std_num.rs');
+      createEditor('collection', 'rust/collection.rs');
+      createEditor('box_t', 'rust/box_t.rs');
+      createEditor('rc', 'rust/rc.rs');
+      createEditor('refcell', 'rust/refcel.rs');
+      createEditor('manualldrop', 'rust/manualldrop.rs');
+      createEditor('imp_trait', 'rust/imp_trait.rs');
+      createEditor('cmp', 'rust/cmp.rs');
+      createEditor('panic', 'rust/panic.rs');
+      createEditor('oncecell', 'rust/oncecell.rs');
+      createEditor('modules', 'rust/modules.rs');
+      createEditor('creates', 'rust/creates.rs');
+      createEditor('attributes', 'rust/attributes.rs');
+      createEditor('work-space', 'rust/work-space.rs');
+      createEditor('cargo', 'rust/cargo.rs');
+      createEditor('strong_trait', 'rust/strong_trait.rs');
+      createEditor('adv', 'rust/adv.rs');
+      createEditor('const_generics', 'rust/const_generics.rs');
+      document.addEventListener('contextmenu', e => e.preventDefault());
+    });
+  </script>
+</body>
+</html>
